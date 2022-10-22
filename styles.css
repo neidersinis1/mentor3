@@ -24,8 +24,8 @@ body {
   width: 310px;
   height: 300px;
   padding: 1.5rem;
+  margin: 1rem;
   border-radius: 15px;
-  margin-bottom: 2rem;
 }
 
 .star {
@@ -35,7 +35,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 1rem; */
   margin-bottom: 2rem;
   border-radius: 50%;
 }
@@ -49,15 +48,14 @@ h1 {
 p {
   font-size: 1.2rem;
   color: hsl(216, 12%, 54%);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .numeration {
-  /* background-color: aqua; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .number {
@@ -69,8 +67,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 1rem; */
-  /* padding: 1rem; */
+  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -81,13 +78,30 @@ p {
   font-size: 2.5rem;
 }
 
+.selected {
+  background-color: hsla(218, 32%, 82%, 0.486);
+  color: hsl(212, 8%, 33%);
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.selected:hover {
+  color: hsl(207, 7%, 24%);
+}
+
 .submit {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 600;
   width: 100%;
-  height: 3rem;
+  height: 3.7rem;
   border: none;
   border-radius: 10px;
   letter-spacing: 0.2rem;
@@ -99,20 +113,98 @@ p {
   text-transform: uppercase;
 }
 
-aside {
+.picture {
+  display: block;
+  margin: 2rem;
+  margin-bottom: 2.2rem;
+}
+
+.selecionado {
+  background-color: hsla(216, 7%, 40%, 0.486);
+  color: hsl(25, 97%, 53%);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.6rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+h3 {
   color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.parrafo-aside {
+  margin: 0.5rem;
+}
+
+.result {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.refresh {
+  color: hsl(25, 97%, 53%);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .inactive {
   display: none;
 }
+.active {
+  background-color: hsl(215, 10%, 24%);
+  width: 310px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
 .attribution {
-  /* background-color: blue; */
   color: rgba(255, 255, 255, 0.699);
+  position: absolute;
+  top: 610px;
   display: inline;
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 .attribution a {
   color: hsl(25, 97%, 53%);
+}
+
+@media screen and (max-width: 370px) {
+  .main-container {
+    background-color: hsl(215, 10%, 24%);
+    width: 280px;
+    height: 300px;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 15px;
+  }
+
+  .active {
+    background-color: hsl(215, 10%, 24%);
+    width: 280px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
 }
