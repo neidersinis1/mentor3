@@ -11,9 +11,6 @@ const aside = document.querySelector("aside");
 const span = document.querySelector("span");
 
 selected1.addEventListener("click", select1);
-selected1.addEventListener("click", () => {
-  //   selected1 = true;
-});
 selected1.addEventListener("click", imprimir1);
 selected2.addEventListener("click", select2);
 selected2.addEventListener("click", imprimir2);
